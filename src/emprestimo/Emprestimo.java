@@ -2,7 +2,7 @@ package emprestimo;
 
 public class Emprestimo {
 
-    public float retornaValorTaxa(float valorEmprestimo){
+    public static float retornaValorTaxa(float valorEmprestimo){
 
         if(valorEmprestimo < 10000){
             return retornaDoisPorCentoDeTaxa();
@@ -18,19 +18,19 @@ public class Emprestimo {
         }
     }
 
-    public float retornaDoisPorCentoDeTaxa(){
+    public static float retornaDoisPorCentoDeTaxa(){
         return 0.02F;
     }
 
-    public float retornaCincoPorCentoDeTaxa(){
+    public static float retornaCincoPorCentoDeTaxa(){
         return 0.05F;
     }
 
-    public float retornaOitoPorCentoDeTaxa(){
+    public static float retornaOitoPorCentoDeTaxa(){
         return 0.08F;
     }
 
-    public float retornaDezPorCentoDeTaxa(){
+    public static float retornaDezPorCentoDeTaxa(){
         return 0.10F;
     }
 
